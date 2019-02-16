@@ -14,6 +14,25 @@
     background: transparent;
 }
 </style>
+<!-- For Small Height -->
+<style>
+@media only screen and (max-height: 332px) {
+	.opening-text {
+		visibility: hidden;
+	}
+	.or-login-contents {
+		visibility: hidden;
+	}
+	.bottom-footer {
+		position: absolute;
+		bottom: -200%;
+		background-color: #49105C;
+		width: 100%;
+		height: 100px !important;
+		text-align: center;
+	}
+}
+</style>
 <style type="text/css">
 html, body {
     height: 100%;
@@ -31,7 +50,7 @@ html, body {
 }
 .sub2 {
     height: 100%;
-    background: #e88802;
+    background-color: #9925C0;
 }
 
 #select-language {
@@ -59,16 +78,26 @@ text-decoration: none;
 font-size: 23px;
 letter-spacing: 2px;
 }
-.opening-text {
-font-size: 23px;
+@media only screen and (max-width: 1366px) {
+	.opening-text {
+font-size: 26px;
 color: lightgray;
 }
+	}
+@media only screen and (max-width: 750px) {
+	.opening-text {
+font-size: 18px;
+color: lightgray;
+text-align: center;
+}
+	}
 .opening-text-div {
 position: absolute;
-top: 38%;
-left: 40.52%;
-margin-top: -30px;
-margin-left: -55px;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+top: 25%;
+margin-bottom: auto;
 }
 .home-footer {
 position: absolute;
@@ -116,7 +145,7 @@ text-decoration: none;
 .bottom-footer {
 position: absolute;
 bottom: -200%;
-background-color: #af6805;
+background-color: #49105C;
 width: 100%;
 height: 200px;
 text-align: center;
@@ -124,6 +153,7 @@ text-align: center;
 
 .paragraph {
 color: lightgray;
+overflow: auto;
 }
 
 a {
@@ -132,14 +162,18 @@ text-decoration: none;
 
 .or-login {
 position: absolute;
-top: 57.5%;
-left: 59.5%;
-margin-top: -50px;
-margin-left: -150px;
-color: lightgray;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+top:51%;
+margin: auto;
 }
-.or-login:hover {
+.or-login-contents:hover {
 color: purple;
+}
+
+.or-login-contents {
+	color: lightgray;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -158,19 +192,18 @@ scrollToAnchor('id3');
 <ul>
 
 </ul>
-<div class="opening-text-div"><p class="opening-text">Learn a language for free with Linter.</p></div>
+<span class="opening-text-div"><p class="opening-text">Learn a language for free with Linter.</p></span>
 
 <a href="choose.html" class="button-link"><button type="button" id="select-language"><span class="contained-text">Learn now!</span></button></a>
 
-<a href="login.html" class="or-login"><p>Or login.</p></a>
-
+<div class="or-login"><a href="login.html" class="or-login-contents">Or login here.</a></div>
+	
 <p class="home-footer">
-<span class="footer-contents-text">How does it work?</span>
-<br>
+  <span class="footer-contents-text">How does it work?</span>
+  <br>
 <a href="#work-how" class="anchor-work-how">
 <span class="footer-contents-arrow">&#9660</span>
 </a>
-</span>
 </p>
 
 </div>
