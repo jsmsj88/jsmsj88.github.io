@@ -126,37 +126,13 @@ text-align: center;
 background-color: #e51635;
 font-size: 28px;
 padding: 4px;
-margin-left: 35px;
-margin-right: 1150px;
+margin-left: 0px;
+margin-right: 1185px;
 text-align: center;
 height: 35px;
 color: lightgray;
-border-bottom-left-radius: 25px;
-border-bottom-right-radius: 5px;
-}
-
-.right {
-list-style-type: none;
-overflow: hidden;
-background-color: #e51635;
-padding: 0;
-zoom: 1;
-}
-
-.content-topbar {
-float: right;
-display: inline-block;
-color: lightgray;
-text-align: center;
-padding: 2px 16px;
-font-size: 28px;
-text-decoration: none;
-transition: 0.4s;
-margin-top: 0px;
-}
-
-.content-topbar:hover {
-background-color:#b71029;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 25px;
 }
 
 .paragraph {
@@ -167,6 +143,21 @@ a {
 text-decoration: none;
 }
 
+.login {
+background-color: #e51635;
+font-size: 24px;
+padding: 4px;
+top: 0px;
+margin-right: 5%;
+text-align: center;
+height: 30px;
+width: 100px;
+color: lightgray;
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+overflow:auto;
+float:right;
+}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -181,11 +172,8 @@ scrollToAnchor('id3');
 <body>
 <div class="main">
 <div class="logo/title">
-<a href="Contacts.html"><h1 class="contact right content-topbar">Contact</h1></a>
-<h1 class="site-language right content-topbar">Site language</h1>
-<h1 class="login right content-topbar">Login</h1>
-</div>
-<a href="Home2.html"><h1 class="logo right"><span id="no-underline">Linter</span></h1></a>
+<h2 class="login">Sign In</h2>
+<a href="index.html"><h2 class="logo">Linter</span></h2></a>
 </div>
 <div class="opening-text-div"><p class="opening-text">Learn a language for free with Linter.</p></div>
 
